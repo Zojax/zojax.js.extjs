@@ -1,0 +1,89 @@
+/* zrt-cssregistry: */
+
+ul.x-menu-list {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+ul.x-menu-list li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+ul.x-tree-lines,
+ul.x-tree-node-ct,
+ul.x-tree-lines li,
+ul.x-tree-node-ct li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.x-tabs-strip .x-btn td {
+  padding: 0;
+}
+
+.x-tabs-body {
+  padding: 1em;
+}
+
+.x-layout-panel-body .x-tabs-body {
+  padding: 0em;
+}
+
+.x-tabs-wrap .x-btn-focus {
+	-moz-outline: none;
+	outline: 0 none;
+}
+
+.x-tabs-wrap .x-btn-left{
+	background:none;
+}
+.x-tabs-wrap .x-btn-right{
+	background:none;
+}
+.x-tabs-wrap .x-btn-center{
+	background:none;
+	padding:0 2px;
+}
+.x-tabs-wrap .x-btn-menu-text-wrap .x-btn-center{
+	padding:0 4px 0 2px;
+}
+.x-tabs-wrap .x-btn-menu-arrow-wrap .x-btn-center{
+	padding:0 2px 0 0;
+}
+.x-tabs-wrap .x-btn-menu-arrow-wrap .x-btn-center span {
+	display:block;
+	width:10px;
+	height:15px;
+	background:transparent url(extjs/images/default/toolbar/btn-arrow.gif) no-repeat 0 0;
+}
+.x-tabs-wrap .x-btn-over .x-btn-left, .x-tabs-wrap .x-btn-pressed .x-btn-left, .x-tabs-wrap .x-btn-menu-active .x-btn-left{
+	background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) no-repeat 0 0;
+}
+.x-tabs-wrap .x-btn-over .x-btn-right, .x-tabs-wrap .x-btn-pressed .x-btn-right, .x-tabs-wrap .x-btn-menu-active .x-btn-right{
+	background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) no-repeat 0 -21px;
+}
+.x-tabs-wrap .x-btn-over .x-btn-center, .x-tabs-wrap .x-btn-pressed .x-btn-center, .x-tabs-wrap .x-btn-menu-active .x-btn-center{
+	background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) repeat-x 0 -42px;
+}
+.x-tabs-wrap .x-btn-over .x-btn-menu-arrow-wrap .x-btn-center span {
+	background-position: 0 -50px;
+}
+
+.x-toolbar .x-btn-highlight .x-btn-left{
+  background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) no-repeat 0 0;
+}
+
+.x-toolbar .x-btn-highlight .x-btn-right{
+  background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) no-repeat 0 -21px;
+}
+
+.x-toolbar .x-btn-highlight .x-btn-center{
+  background:url(extjs/images/aero/toolbar/tb-btn-sprite.gif) repeat-x 0 -42px;
+}

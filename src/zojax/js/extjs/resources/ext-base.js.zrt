@@ -1,0 +1,1 @@
+/* zrt-replace: "extjs.com" tal"python:path('context/@@absolute_url').split('//')[1]+'/@@/extjs/images/default'" */
