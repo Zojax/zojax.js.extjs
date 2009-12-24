@@ -1,0 +1,35 @@
+<configure 
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser">
+
+  <zojax:resourcedirectory
+     name="extjs"
+     directory="resources"
+     mapping=".css:zrt .zrt:null ext-base.js:zrt" />
+
+  <zojax:resourcepackage
+     type="javascript"
+     name="extjs.js"
+     title="ExtJS Library (Javascripts)"
+     cache="dynamic"
+     library="extjs"
+     require="jquery"
+     order="0">
+    <!-- ext core -->
+    <resource path="extjs/ext-jquery-adapter.js"  />
+    <resource path="extjs/ext-all.js" />
+  </zojax:resourcepackage>
+
+  <zojax:resourcepackage
+     type="stylesheet"
+     name="extjs.css"
+     title="ExtJS Library (Stylesheets)"
+     cache="dynamic"
+     library="extjs">
+
+    <resource path="extjs/css/ext-all.css" media="all" />
+    <resource path="extjs/zojax-ext.css" media="all" />
+  </zojax:resourcepackage>
+
+</configure>
