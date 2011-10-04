@@ -1,5 +1,6 @@
 <configure 
    xmlns="http://namespaces.zope.org/zope"
+   xmlns:zcml="http://namespaces.zope.org/zcml"
    xmlns:zojax="http://namespaces.zope.org/zojax"
    xmlns:browser="http://namespaces.zope.org/browser">
 
@@ -17,8 +18,11 @@
      require="jquery"
      order="0">
     <!-- ext core -->
-    <resource path="extjs/ext-jquery-adapter.js"  />
-    <resource path="extjs/ext-all.js" />
+    <resource zcml:condition="have devmode" path="extjs/adapter/jquery/ext-jquery-adapter-debug.js"  />
+    <resource zcml:condition="have devmode" path="extjs/ext-all-debug.js" />
+
+    <resource zcml:condition="not-have devmode" path="extjs/adapter/jquery/ext-jquery-adapter.js"  />
+    <resource zcml:condition="not-have devmode" path="extjs/ext-all.js" />
   </zojax:resourcepackage>
 
   <zojax:resourcepackage
@@ -28,7 +32,7 @@
      cache="dynamic"
      library="extjs">
 
-    <resource path="extjs/css/ext-all.css" media="all" />
+    <resource path="extjs/resources/css/ext-all.css" media="all" />
     <resource path="extjs/zojax-ext.css" media="all" />
   </zojax:resourcepackage>
 

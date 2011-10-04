@@ -45,3 +45,4 @@ parts/
 .pydevproject
 .project
 commit.txt
+.DS_Store
